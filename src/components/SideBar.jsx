@@ -12,7 +12,7 @@ import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import Groups2Icon from '@mui/icons-material/Groups2';
 import { useNavigate } from 'react-router-dom';
 import { Box} from "@mui/material";
-import passwordCheck from "../assets/images/passwordCheck.png";
+import passwordCheck from "../assets/images/passwordcheck.png";
 import box from "../assets/images/box.png"; 
 import boxactive from "../assets/images/boxactive.png"; 
 import star from "../assets/images/star.png"; 
