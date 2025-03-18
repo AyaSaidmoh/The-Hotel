@@ -1,63 +1,42 @@
-import * as React from "react";
 import { styled } from "@mui/material/styles";
-import { Routes, Route } from "react-router-dom"; 
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import SideBar from "./components/SideBar";
 import TopBar from "./components/TopBar";
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
-
-const drawerWidth = 136; 
-const topBarHeight = 124; 
+const drawerWidth = 136;
+const topBarHeight = 124;
 
 const Main = styled("main")(({ theme }) => ({
   flexGrow: 1,
   padding: "8px 24px",
-  marginLeft: `${drawerWidth}px`, 
-  marginTop: `${topBarHeight}px`, 
+  marginLeft: `${drawerWidth}px`,
+  marginTop: `${topBarHeight}px`,
   marginRight: "24px",
   transition: theme.transitions.create("margin", {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
-  minHeight: "100vh", 
-  width: `calc(100% - ${drawerWidth}px)`, 
-  backgroundColor: "#FFFFFF", 
+  minHeight: "100vh",
+  width: `calc(100% - ${drawerWidth}px)`,
+  backgroundColor: "#FFFFFF",
 }));
 
 export default function AppLayout() {
   return (
-    <Box sx={{ display: "flex", backgroundColor: "#F8F8F8", minHeight: "100vh" }}> 
+    <Box
+      sx={{ display: "flex", backgroundColor: "#F8F8F8", minHeight: "100vh" }}
+    >
       <CssBaseline />
       <TopBar />
       <SideBar />
-      <Main >
+      <Main>
         <Outlet />
       </Main>
     </Box>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import * as React from 'react';
 // import { styled, useTheme } from '@mui/material/styles';

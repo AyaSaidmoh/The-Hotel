@@ -6,8 +6,6 @@ import {
   Route,
   RouterProvider,
   createRoutesFromElements,
-  BrowserRouter as Router,
-  Routes,
 } from "react-router-dom";
 
 import App from './App';
